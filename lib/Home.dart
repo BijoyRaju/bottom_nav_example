@@ -1,17 +1,12 @@
 import 'package:bottom_navigation_bar/Home1.dart';
 import 'package:flutter/material.dart';
-
 class Home extends StatefulWidget {
   const Home({super.key});
-
   @override
   State<Home> createState() => _HomeState();
 }
-
 class _HomeState extends State<Home> {
-
   var iconColor = Colors.white;
-
   void changeColor(){
     setState(() {
       if(iconColor == Colors.white){
@@ -21,7 +16,6 @@ class _HomeState extends State<Home> {
       }
     });
   }
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,7 +54,6 @@ class _HomeState extends State<Home> {
                   child: IconButton(onPressed: (){
                     changeColor();
                   }, icon: Icon(Icons.thumb_down),color: iconColor,),
-
                 ),
               ],
             )
